@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, My Love ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #2c1a3d;
+      background: linear-gradient(to right, #2c1a3d, #3e2d5c);
+      overflow-x: hidden;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 40px;
+    }
+
+    .message, .reasons {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 1.1em;
+      white-space: pre-wrap;
+    }
+
+    .reasons ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .reasons li {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    .heart {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background: red;
+      transform: rotate(45deg);
+      animation: float 10s linear infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        bottom: -10%;
+        left: calc(100% * var(--random-x));
+        opacity: 1;
+      }
+      100% {
+        bottom: 110%;
+        left: calc(100% * var(--random-x));
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .message, .reasons li {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday, My Love ❤️</h1>
+
+  <div class="message">
+    Happy birthday, my baby. Things aren’t going great nowadays, I know, but don’t let anything bring you down, tabuh. I know it’s not the best birthday — but it’s not the worst either. This time, you’ve got me with you, okay? You’re not alone. I’ve always got your back, my love.
+
+    My baby, I really miss you right now, and I wish you were here. Sometimes all I think about is the old days, and how great your birthday would’ve been if things were okay. I know you keep saying you’re going to have a bad day — but whenever you're with me, I promise I’ll do my best to make you feel better, my babyh.
+
+    Amar tabuhh, you’ve been by my side for so long, always putting up with my annoying self — always arguing, always struggling to understand. You’ve taught me so much, and I’m so grateful. My jaan, I love you so much, and I’ve always got you too. I may mess things up or disappoint you, but please don’t be really upset or mad at me. I don’t like seeing you upset, baby.
+
+    I’m sorry if I ever mess up — just let me know if I don’t realize. And forgive me. I never mean anything bad to you. I never mean to hurt you, love.
+
+    I love you so much, babyh. You are my everything. The memories we’ve made over all these months and the past year mean a lot to me. You know, more than 5 minutes of the 7-minute flashback after I die will be about us being together.
+
+    All the late-night talks, from watching K-dramas and movies, FaceTiming, yapping, shitting on others — oh god, if only I could tell you how much I miss all that and how much it meant to me, ahahaaa.
+
+    My little jaan-er tukra tahhh — I love you so much, babyh. I just hope things get better soon. I want to be by your side, always up your ass (literally), hanging around, being the one in your arms forever. I want to be the one marrying you, kissing you all over. Babyh, you are my everything and you forever will be.
+
+    Hugging you makes me soooo happy. You’re so warm and soft — omg, such a babyh, amar jaan. I love you the most, tabuhh. I hope things get better soon. And baby — I’m with you, okay?
+
+    No matter what the situation is, whatever happens, I will always be with you. If anything ever happens and we lose contact, don’t worry babyh. Don’t even worry a bit about me. I’ll be there for you — waiting, okay? It’s you, and only you, babyh. No other option. I mean it, tabuh. I love you so much, jaan.
+
+    Babyh, you’re the best. Thank you so much for everything. I just hope I give you a great life, make you feel like a princess, and fulfill all your wants and needs. I love you so much. I hope one day I hear from you that I was all you ever wished for — that will make me cry in seconds.
+
+    I love you so much, babyh. Happy birthday again, babyh. I love you soooo much. Mwahhhh. ❤️
+  </div>
+
+  <div class="reasons">
+    <h2>Reasons I Love You</h2>
+    <ul>
+      <li>Your eyes</li>
+      <li>Your lips</li>
+      <li>Your cake</li>
+      <li>Your cheeks</li>
+      <li>Your hair</li>
+      <li>Your personality</li>
+      <li>You being dumb</li>
+      <li>You being cute</li>
+      <li>Everything about you</li>
+    </ul>
+  </div>
+
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.setProperty('--random-x', Math.random());
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.animationDuration = 5 + Math.random() * 5 + 's';
+      heart.style.opacity = Math.random();
+      document.body.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
